@@ -1,0 +1,23 @@
+.cool-text {
+	color: black;
+	background-color: pink;
+	font-family: "Verdana", "DejaVu Sans", sans-serif;
+}
+
+#number-two {
+	color: blue;
+	font-size: 36px;
+}
+
+#number-four {
+	background-color: lightgreen;
+	font-size: 24px;
+	font-weight: bold;
+}
+
+.cooler-text {
+	color: black;
+	background-color: pink;
+	font-size: 24px;
+	font-family: "Verdana", "DejaVu Sans", sans-serif;
+}
