@@ -1,0 +1,54 @@
+body {
+  background-color: black;
+}
+
+/* .header {
+    display: flex;
+    justify-content: space-between;
+    background-color: #112c4f;
+}
+
+.header-menu {
+    display:flex;
+    justify-content: center;
+    align-items: center;
+} */
+
+li {
+  display: inline;
+}
+
+ul {
+  margin: 0;
+  padding: 0;
+}
+
+* {
+  border: 2px solid red;
+}
+
+.cardholder-container {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  justify-content: center;
+  margin: 16px 0;
+  gap: 16px;
+  min-height: 300px;
+}
+
+.cardholder-custom-text {
+  /* justify-self: self-end; */
+}
+
+.cardholders.card img {
+  min-height: auto;
+}
+
+.course-component {
+  margin: 20px auto;
+}
+
+.course-menu {
+  margin: 20px 0;
+}

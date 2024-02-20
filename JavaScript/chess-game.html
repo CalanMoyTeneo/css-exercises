@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        function getComputerChoice(){
+            //gets a random value from between 0-2
+            // and produces a result of rock, paper or scissors 
+            // to simulate a computer's choice in the game
+            let randomNumberValue = Math.round(getRandomNumber());
+            console.log(randomNumberValue);
+            switch(randomNumberValue){
+                case 0: {
+                    console.log("rock");
+                    return "rock"
+                };
+                case 1: {
+                    console.log("scissors");
+                    return "scissors";
+                }
+                case 2: {                    
+                    console.log("paper");
+                    return "paper";
+                }
+                default: return "paper";
+            }
+        }
+
+        function getRandomNumber() {
+            const MIN_VALUE = 0;
+            const MAX_VALUE = 3
+            let randomNum = Math.random() * (MAX_VALUE-MIN_VALUE) +MIN_VALUE;
+            console.log(randomNum);
+            return randomNum;
+        }
+
+        function playRound(playerSelection, computerSelection){
+            //need to make playerSelection all lower case
+            //then compare 
+
+            let playerDefeaterCombo = (playerSelection==="paper" && computerSelection==="rock") ||
+                (playerSelection==="rock" && computerSelection==="scissors") ||
+                (playerSelection==="scissors" && computerSelection==="paper");
+            //brute force 3 options that 
+            
+            if(playerDefeaterCombo){
+                return `You win! ${playerSelection} beats ${computerSelection}`;
+            } else if(playerSelection === computerSelection){
+                return `Draw! ${computerSelection} is the same as ${playerSelection}`;
+
+            }else {
+                return `You lose! ${computerSelection} beats ${playerSelection}`;
+
+            }
+        }
+
+
+        for(let x=0;x<5;x++){
+            const playerSelection = prompt("enter in rock, paper or scissors");
+            const computerSelection = getComputerChoice();
+            console.log(playRound(playerSelection.toLowerCase(),computerSelection));
+        }
+    </script>
+</body>
+</html>
