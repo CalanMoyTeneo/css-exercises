@@ -1,8 +1,21 @@
+#center-div {
+  display: flex;
+  justify-content: center;
+}
+
 .container {
   background: dodgerblue;
   border: 4px solid midnightblue;
   width: 400px;
   height: 300px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  align-self: center;
+}
+
+* {
+  border: 2px solid darkred;
 }
 
 .box {
@@ -12,4 +25,5 @@
   border: 6px solid maroon;
   width: 80px;
   height: 80px;
+/*  align-self: center;*/
 }

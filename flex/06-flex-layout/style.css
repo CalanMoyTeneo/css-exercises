@@ -16,6 +16,9 @@ button {
   border: none;
   border-radius: 8px;
   background: #eee;
+  padding: 16px;
+  font-weight: bold;
+  font-size: 16px;
 }
 
 input {
@@ -25,3 +28,54 @@ input {
   width: 400px;
   margin-bottom: 16px;
 }
+
+li {
+  display: inline;
+  margin: 8px;
+/*  margin-right: 0px;*/
+}
+
+a {
+  /* this removes the line under our links */
+  text-decoration: none;
+  color: #666;
+}
+
+ul {
+  list-style-type: none;
+  display: flex;
+/*  remove space from bullet points*/
+  margin: 0;
+  padding: 0;
+  gap: 16px;
+}
+
+.header, .footer {
+  display: flex;
+  justify-content: space-between;
+  padding: 8px;
+}
+
+/**footer needs additional styling*/
+.footer {
+  background-color: #eeeeee;
+}
+
+.content {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  min-height: 80%;
+  gap: 16px;
+}
+
+/*
+* {
+  border: 2px solid darkred;
+}*/
+
+
+
+
+
