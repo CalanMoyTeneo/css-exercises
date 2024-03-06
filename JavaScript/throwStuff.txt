@@ -1,0 +1,73 @@
+<div class="cardholder-container">
+        <div class="cardholder-custom-text">
+          <h2>In the Moment</h2>
+        </div>
+
+        <!-- image -->
+        <div class="d-flex">
+          <div class="card bg-dark text-white">
+            <img
+              src="./images/Big-Thumbnail-final.jpeg"
+              class="card-img-top img-fluid"
+              alt="..."
+            />
+            <div class="card-body">
+              <h5 class="card-title">IPRs Filed to IPO 2020-2023</h5>
+            </div>
+          </div>
+        <div class="d-flex flex-column">
+          <div
+          class="cardholders card mb-3 bg-dark-subtle"
+          style="max-width: 540px"
+          >
+            <div class="row g-0">
+              <div class="col-md-4">
+                <a href="#"
+                  ><img
+                    src="./images/SM-Thumbnail-5.jpeg"
+                    class="img-fluid rounded-start"
+                    alt="..."
+                /></a>
+              </div>
+              <div class="col-md-8">
+                <div class="card-body">
+                  <h3>Role of Honor - UCP 26th Convocation</h3>
+                </div>
+              </div>
+            </div>
+        </div>
+      <!-- IMAGE 2.2-->
+        <div class="cardholders card mb-3" style="max-width: 540px">
+          <div class="row g-0 $blue-800">
+            <div class="col-md-4">
+              <a href="#"
+                ><img
+                  src="./images/Featured-IMGs-UCP.png"
+                  class="img-fluid rounded-start"
+                  alt="..."
+              /></a>
+            </div>
+            <div class="col-md-8">
+              <div class="card-body">
+                <h3>
+                  Indoor Plantation initiated by Faculty of Languages and
+                  Literature
+                </h3>
+              </div>
+            </div>
+          </div>
+        </div>  
+      </div>
+      <!--smaller images -->
+      </div>
+      <div class="text-center">
+        <button
+          type="button"
+          class="btn btn-primary"
+          style="background-color: #112c4f; padding: 15px 30px"
+          href="#"
+        >
+          More UCP news
+        </button>
+      </div>
+    </div>

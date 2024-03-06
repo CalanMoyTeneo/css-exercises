@@ -1,0 +1,331 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style type="text/css">
+      @media only screen and (max-width: 550px) {
+        .responsive_at_550 {
+          width: 90% !important;
+          max-width: 90% !important;
+        }
+      }
+
+      .project-details table,
+      th,
+      .project-costing-data td {
+        border: 1px solid black;
+        border-collapse: collapse;
+      }
+
+      .project-details table,
+      td,
+      .project-detail-values {
+        padding-top: 10px;
+        padding-bottom: 10px;
+      }
+
+      .project-details th,
+      td {
+        padding-left: 10px;
+      }
+
+      .project-detail-text {
+        font-weight: 600;
+      }
+
+      .spacer {
+        border: 0;
+      }
+      /* 
+      .project-costing-data.details {
+        text-align: right;
+      } */
+
+      .project-costing-data.number-data {
+        text-align: right;
+      }
+      body {
+        font-family: "Courier New", Courier, monospace;
+      }
+
+      .project-signatures {
+        padding-top: 20px;
+      }
+
+      .project-signatures.project-titles td {
+        padding-top: 0;
+        padding-bottom: 15px;
+      }
+
+      .project-signatures.project-signoff td {
+        width: 15%;
+        padding-top: 0px;
+        padding-bottom: 0;
+      }
+
+      .project-signatures.project-name td,
+      .project-signatures.project-date td {
+        width: 15%;
+        padding-top: 0;
+        padding-bottom: 0;
+      }
+    </style>
+  </head>
+  <body>
+    <table
+      class="project-details"
+      style="border: 1px solid black; border-collapse: collapse"
+    >
+      <tr style="border: 1px solid black; border-collapse: collapse">
+        <th
+          style="
+            width: 30%;
+            text-align: left;
+            padding-top: 10px;
+            padding-bottom: 10px;
+          "
+        >
+          Selia Selenggara Selatan Sdn Bhd
+        </th>
+        <th>Comparison Analysis</th>
+      </tr>
+      <!-- project title-->
+      <tr>
+        <td class="project-detail-text">Project title</td>
+        <td class="project-detail-values">
+          KERJA RUTIN AK
+          <hr />
+        </td>
+      </tr>
+      <!-- Project description -->
+      <tr>
+        <td class="project-detail-text">Project Description</td>
+        <td class="project-detail-values">
+          KERJA-KERJA PEMBERSIHAN JALAN MENGUTIP SAMPAH DI LALUAN FT188 JALAN
+          LINGKARAN DALAM SEK 0.70-4.81 DAN JALAN CIQ SEKSYEN 0.00-1.80 DAERAH
+          JOHOR BAHRU
+          <hr />
+        </td>
+      </tr>
+      <!-- State district-->
+      <tr>
+        <td class="project-detail-text">STATE/DISTRICT</td>
+        <td class="project-detail-values">
+          JOHOR/JOHOR BAHRU
+          <hr />
+        </td>
+      </tr>
+      <!-- Route no/name -->
+      <tr>
+        <td class="project-detail-text">ROUTE NO/NAME</td>
+        <td class="project-detail-values">
+          FT188 - Jalan Lingkaran Dalam
+          <hr />
+        </td>
+      </tr>
+      <!-- <Section></Section> -->
+      <tr>
+        <td class="project-detail-text">SECTION</td>
+        <td class="project-detail-values">
+          0.70-4.81
+          <hr />
+        </td>
+      </tr>
+    </table>
+
+    <!-- table for the charges  
+        1. the column spread is different 
+        2. need the borderoutlines for all 
+    -->
+    <!-- <div style="margin: 20px"></div> -->
+
+    <table
+      class="project-costing"
+      style="
+        border: 1px solid black;
+        border-collapse: collapse;
+        width: 100%;
+        margin-top: 0;
+      "
+    >
+      <tr class="level-1-header">
+        <th class="spacer" colspan="4"></th>
+        <th colspan="4">SSSSB</th>
+        <th colspan="">Panel SubCon SOR</th>
+        <th colspan="2">Pembinaan Juara Perkasa</th>
+      </tr>
+      <tr class="level-2-header">
+        <th class="spacer" colspan="4"></th>
+        <th colspan="2">Basic SOR</th>
+        <th colspan="2">Bitumen product(11%)</th>
+        <th>Basic SOR</th>
+        <th colspan="2">Basic SOR</th>
+      </tr>
+
+      <tr class="level-3-header">
+        <th>No</th>
+        <th>Description</th>
+        <th>Unit</th>
+        <th>Quantity</th>
+        <th>Rate</th>
+        <th>Amt</th>
+        <th>Rate</th>
+        <th>Amount</th>
+        <th>Rate</th>
+        <th>Rate</th>
+        <th>Amount</th>
+      </tr>
+
+      <!-- data -->
+      <tr class="project-costing-data">
+        <td>1.</td>
+        <td>Maintenance of Bridge</td>
+        <td>m</td>
+        <td class="project-costing-data number-data">100.00</td>
+        <td class="project-costing-data number-data">10.00</td>
+        <td class="project-costing-data number-data">1000.00</td>
+        <td class="project-costing-data number-data">0.00</td>
+        <td class="project-costing-data number-data">0.00</td>
+        <td class="project-costing-data number-data">0.0</td>
+        <td class="project-costing-data number-data">10.00</td>
+        <td class="project-costing-data number-data">1000.00</td>
+      </tr>
+
+      <tr class="project-costing-data">
+        <td></td>
+        <td>SUB TOTAL FOR Bridge Maintenance (RM)</td>
+        <td></td>
+        <td></td>
+        <td class="project-costing-data number-data" colspan="2">1000.00</td>
+        <td class="project-costing-data number-data" colspan="2">0.00</td>
+        <td class="project-costing-data number-data">0.00</td>
+        <td class="project-costing-data number-data">0.0</td>
+        <td class="project-costing-data number-data" colspan="2">1000.00</td>
+      </tr>
+
+      <tr class="project-costing-data">
+        <td></td>
+        <td>PRELIMINARIES AND NIGHT WORK (RM) - ORIGINAL</td>
+        <td></td>
+        <td class="project-costing-data number-data"></td>
+        <td class="project-costing-data number-data" colspan="4">1000.00</td>
+        <td class="project-costing-data number-data">0.0</td>
+        <td class="project-costing-data number-data" colspan="2">0.00</td>
+      </tr>
+
+      <tr class="project-costing-data">
+        <td></td>
+        <td>TOTAL AMOUNT (RM) - ORIGINAL</td>
+        <td></td>
+        <td class="project-costing-data number-data"></td>
+        <td class="project-costing-data number-data" colspan="4">1000.00</td>
+        <td class="project-costing-data number-data">0.0</td>
+        <td class="project-costing-data number-data" colspan="2">0.00</td>
+      </tr>
+
+      <tr class="project-costing-data">
+        <td></td>
+        <td>TOTAL SST AMOUNT (RM) - ORIGINAL</td>
+        <td></td>
+        <td class="project-costing-data number-data"></td>
+        <td class="project-costing-data number-data" colspan="4">1000.00</td>
+        <td class="project-costing-data number-data">0.0</td>
+        <td class="project-costing-data number-data" colspan="2">0.00</td>
+      </tr>
+
+      <tr class="project-costing-data">
+        <td></td>
+        <td>GRAND TOTAL AMOUNT (RM) - ORIGINAL</td>
+        <td></td>
+        <td class="project-costing-data number-data"></td>
+        <td class="project-costing-data number-data" colspan="4">1000.00</td>
+        <td class="project-costing-data number-data">0.0</td>
+        <td class="project-costing-data number-data" colspan="2">0.00</td>
+      </tr>
+
+      <tr class="project-costing-data">
+        <td></td>
+        <td>DIFFERENCE (RM) - ORIGINAL</td>
+        <td></td>
+        <td class="project-costing-data number-data"></td>
+        <td class="project-costing-data number-data" colspan="4">1000.00</td>
+        <td class="project-costing-data number-data">0.0</td>
+        <td class="project-costing-data number-data" colspan="2">0.00</td>
+      </tr>
+
+      <tr class="project-costing-data">
+        <td></td>
+        <td>PROFIT MARGIN (%) - ORIGINAL</td>
+        <td></td>
+        <td class="project-costing-data number-data"></td>
+        <td class="project-costing-data number-data" colspan="4">1000.00</td>
+        <td class="project-costing-data number-data">0.0</td>
+        <td class="project-costing-data number-data" colspan="2">0.00</td>
+      </tr>
+
+      <tr class="project-costing-data">
+        <td></td>
+        <td>GRAND TOTAL AMOUNT (RM) - ORIGINAL + VO</td>
+        <td></td>
+        <td class="project-costing-data number-data"></td>
+        <td class="project-costing-data number-data" colspan="4">1000.00</td>
+        <td class="project-costing-data number-data">0.0</td>
+        <td class="project-costing-data number-data" colspan="2">0.00</td>
+      </tr>
+
+      <tr class="project-costing-data">
+        <td></td>
+        <td>DIFFERENCE (RM) - ORIGINAL + VO</td>
+        <td></td>
+        <td class="project-costing-data number-data"></td>
+        <td class="project-costing-data number-data" colspan="4">1000.00</td>
+        <td class="project-costing-data number-data">0.0</td>
+        <td class="project-costing-data number-data" colspan="2">0.00</td>
+      </tr>
+    </table>
+
+    <!-- signatures  -->
+    <table class="project-signatures" style="width: 100%">
+      <tr>
+        <td>Checked By:</td>
+        <td>Reviewed By:</td>
+        <td>Reviewed By:</td>
+        <td>Verify By:</td>
+        <td>Approved By:</td>
+      </tr>
+      <tr class="project-signatures project-signoff">
+        <td><hr /></td>
+        <td><hr /></td>
+        <td><hr /></td>
+        <td><hr /></td>
+        <td><hr /></td>
+      </tr>
+      <tr class="project-signatures project-titles">
+        <td>SR. Quantity Surveyor</td>
+        <td>Head of contract</td>
+        <td>Head of operation</td>
+        <td>Group Contract</td>
+        <td>COO</td>
+      </tr>
+
+      <tr class="project-signatures project-name">
+        <td>Name:</td>
+        <td>Name:</td>
+        <td>Name:</td>
+        <td>Name:</td>
+        <td>Name:</td>
+      </tr>
+
+      <tr class="project-signatures project-date">
+        <td>Date:</td>
+        <td>Date:</td>
+        <td>Date:</td>
+        <td>Date:</td>
+        <td>Date:</td>
+      </tr>
+    </table>
+  </body>
+</html>
